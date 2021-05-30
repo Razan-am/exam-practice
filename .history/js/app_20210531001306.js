@@ -15,9 +15,9 @@ function Myform(className, numberOfClasses) {
 }
 console.log(mainArr);
 
-// function random(min, max) {
-//     mainArr.randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-// }
+function random(min, max) {
+    mainArr.randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 myForm.addEventListener('submit', handleSubmit);
@@ -53,9 +53,9 @@ function render() {
         tBody.appendChild(td2);
         td2.textContent = `${mainArr[index].numberOfClasses}`;
 
-        // let td3 = document.createElement('td');
-        // tBody.appendChild(td3);
-        // td3.textContent = `${mainArr[index].randomNumber}`;
+        let td3 = document.createElement('td');
+        tBody.appendChild(td3);
+        td3.textContent = `${mainArr[index].randomNumber}`;
     }
 
 }
@@ -74,5 +74,5 @@ function getting() {
     }
     render();
 }
-// random(1, 10);
+random(1, 10);
 getting();

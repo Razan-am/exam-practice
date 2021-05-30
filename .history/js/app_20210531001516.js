@@ -74,5 +74,5 @@ function getting() {
     }
     render();
 }
-// random(1, 10);
+random(1, 10);
 getting();
