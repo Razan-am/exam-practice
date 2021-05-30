@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+form{
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+}
+fieldset{
+    display: inline-block;
+    border: 2px solid black;
+    width: 20px;
+}
+
+table {
+    margin-left: 250px;
+}
+th{
+    padding-left: 20px;
+}
+td{
+    padding-left: 20px;
+}
