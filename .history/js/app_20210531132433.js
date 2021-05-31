@@ -15,7 +15,8 @@ function Myform(className, numberOfClasses) {
 console.log(mainArr);
 let randomNumber = 0;
 function random(min, max) {
-   return Math.floor(Math.random() * (max - min + 1)) + min;
+    randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
 }
 
 

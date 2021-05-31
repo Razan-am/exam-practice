@@ -9,14 +9,15 @@ let mainArr = [];
 function Myform(className, numberOfClasses) {
     this.className = className;
     this.numberOfClasses = numberOfClasses;
+    // this.randomNumber = 0;
     mainArr.push(this);
 
 }
 console.log(mainArr);
-let randomNumber = 0;
-function random(min, max) {
-   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+
+// function random(min, max) {
+//     mainArr.randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
 
 myForm.addEventListener('submit', handleSubmit);
@@ -33,11 +34,11 @@ function handleSubmit(event) {
 let headerEl = document.createElement('tr');
 myTable.appendChild(headerEl);
 function render() {
+    // myTable.textContent='';
     let tBody = document.createElement('tr');
     myTable.appendChild(tBody);
-    // myTable.textContent='';
+    headerEl.textContent = '';
     for (let index = 0; index < mainArr.length; index++) {
-        headerEl.textContent = '';
         tBody.textContent='';
         for (let i = 0; i < headerData.length; i++) {
             let thEl = document.createElement('th');
@@ -52,9 +53,9 @@ function render() {
         tBody.appendChild(td2);
         td2.textContent = `${mainArr[index].numberOfClasses}`;
 
-        let td3 = document.createElement('td');
-        tBody.appendChild(td3);
-        td3.textContent = `${random(1, 10)}`;
+        // let td3 = document.createElement('td');
+        // tBody.appendChild(td3);
+        // td3.textContent = `${mainArr[index].randomNumber}`;
     }
 
 }
